@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kiyoka Nishiyama"]
-  s.date = "2013-03-26"
+  s.date = "2013-07-30"
   s.description = "calculate Jaro Winkler distance."
   s.email = "kiyoka@sumibi.org"
   s.extra_rdoc_files = [
@@ -27,35 +27,28 @@ Gem::Specification.new do |s|
     "lib/fuzzystringmatch/inline/jarowinkler.rb",
     "lib/fuzzystringmatch/pure.rb",
     "lib/fuzzystringmatch/pure/jarowinkler.rb",
-    "test/basic_native_spec.rb",
     "test/basic_pure_spec.rb",
     "test/mutibyte_spec.rb"
   ]
   s.homepage = "http://github.com/kiyoka/fuzzy-string-match"
   s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new(">= 1.9.1")
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.24"
   s.summary = "fuzzy string matching library"
 
   if s.respond_to? :specification_version then
-    s.specification_version = 4
+    s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<rspec>, [">= 0"])
-      s.add_runtime_dependency(%q<RubyInline>, [">= 3.8.6"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
-      s.add_runtime_dependency(%q<RubyInline>, [">= 3.8.6"])
     else
       s.add_dependency(%q<rspec>, [">= 0"])
-      s.add_dependency(%q<RubyInline>, [">= 3.8.6"])
       s.add_dependency(%q<rspec>, [">= 0"])
-      s.add_dependency(%q<RubyInline>, [">= 3.8.6"])
     end
   else
     s.add_dependency(%q<rspec>, [">= 0"])
-    s.add_dependency(%q<RubyInline>, [">= 3.8.6"])
     s.add_dependency(%q<rspec>, [">= 0"])
-    s.add_dependency(%q<RubyInline>, [">= 3.8.6"])
   end
 end
 

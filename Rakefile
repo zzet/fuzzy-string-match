@@ -54,13 +54,11 @@ begin
                              'lib/fuzzystringmatch/pure/jarowinkler.rb',
                              'lib/fuzzystringmatch/pure.rb',
                              'lib/fuzzystringmatch.rb',
-                             'test/basic_native_spec.rb',
                              'test/basic_pure_spec.rb',
                              'test/mutibyte_spec.rb',
                              'LICENSE.txt',
                              'README.md'].to_a
     gemspec.add_development_dependency( "rspec" )
-    gemspec.add_dependency( 'RubyInline', '>= 3.8.6')
     gemspec.required_ruby_version = '>= 1.9.1'
   end
 
